@@ -74,11 +74,9 @@ class LoginView(APIView):
             })
         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
         jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-        jwt_decode_handler = api_settings.JWT_DECODE_HANDLER
 
         pay_load = jwt_payload_handler(user)
         token = jwt_encode_handler(pay_load)
-        print(jwt_decode_handler(token))
         return JsonResponse({
             "code":"0000",
             "msg":"操作成功",
