@@ -1,7 +1,7 @@
 from django.http.response import JsonResponse
 from rest_framework.views import APIView
 from rest_framework_jwt.settings import api_settings
-from users.models import User
+from .models import User
 
 
 # Create your views here.

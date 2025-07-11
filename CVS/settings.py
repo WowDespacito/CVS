@@ -98,6 +98,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+# 使用时区
 USE_TZ = True
 
 
@@ -109,4 +110,5 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
+# 默认自增长主键
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
